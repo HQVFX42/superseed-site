@@ -5,45 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SUPER SEED</title>
 <meta name="description" content="SUPER SEED — 대한민국 기반 모바일 게임 개발사">
-<style>
-  :root { --fg:#1d1d1f; --muted:#6e6e73; --accent:#2f7d32; --bg:#fafaf7; }
-  * { box-sizing:border-box; }
-  body { margin:0; font-family:-apple-system, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color:var(--fg); background:var(--bg); line-height:1.6; }
-  main { max-width:720px; margin:0 auto; padding:64px 24px; }
-  h1 { font-size:2.4rem; margin:0 0 8px; letter-spacing:-0.02em; }
-  h2 { font-size:1.2rem; margin:48px 0 16px; color:var(--muted); font-weight:600; }
-  p { margin:0 0 12px; }
-  a { color:var(--accent); }
-  .game { display:flex; gap:20px; align-items:center; padding:20px; background:#fff; border-radius:16px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
-  .game img { width:96px; height:96px; border-radius:22px; flex-shrink:0; }
-  .game h3 { margin:0 0 6px; font-size:1.2rem; }
-  .btn { display:inline-block; padding:8px 16px; border-radius:999px; background:var(--accent); color:#fff; text-decoration:none; font-size:.9rem; }
-  footer { margin-top:64px; font-size:.85rem; color:var(--muted); }
-  footer a { color:var(--muted); }
-</style>
+<meta name="theme-color" content="#0b0d10">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
-  <h1>SUPER SEED</h1>
-  <p>대한민국 기반의 모바일 게임 개발사입니다. 누구나 쉽게 즐길 수 있는 2D 게임을 만듭니다.</p>
-
-  <h2>Games</h2>
-  <div class="game">
-    <img src="https://play-lh.googleusercontent.com/t8enlazBGdamJWx17-t3dH1GLEyZXZJhqLqcjWBUDjsfjP59WJLTrog36MDfMlaBL6hEa4hu7i3hf-C3_T7olg=s192" alt="SUPER POP! 아이콘">
-    <div>
-      <h3>SUPER POP!</h3>
-      <p>캐주얼 퍼즐 게임</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.superseed.superpop">Google Play</a>
-    </div>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/">SUPER SEED</a>
+    <nav class="nav">
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
+</header>
 
-  <h2>Contact</h2>
-  <p>이메일: <a href="mailto:superseed000@gmail.com">superseed000@gmail.com</a></p>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>SUPER SEED</h1>
+      <p>대한민국 기반의 모바일 게임 개발사입니다. 누구나 쉽게 즐길 수 있는 2D 게임을 만듭니다.</p>
+    </div>
+  </section>
 
-  <footer>
-    <p>SUPER SEED · 대표 김현지 · 대한민국</p>
-    <p><a href="https://iris-lumber-8f5.notion.site/Privacy-Policy-3be5a833ef24804cb2d5e91264ee54f5">개인정보처리방침 / Privacy Policy</a></p>
-  </footer>
+  <section class="section" id="games">
+    <div class="wrap">
+      <h2>Games</h2>
+      <div class="games">
+        <div class="game">
+          <img src="https://play-lh.googleusercontent.com/t8enlazBGdamJWx17-t3dH1GLEyZXZJhqLqcjWBUDjsfjP59WJLTrog36MDfMlaBL6hEa4hu7i3hf-C3_T7olg=s192" alt="SUPER POP! 아이콘">
+          <div>
+            <h3>SUPER POP!</h3>
+            <p>캐주얼 퍼즐 게임</p>
+            <div class="links">
+              <a class="btn" href="https://play.google.com/store/apps/details?id=com.superseed.superpop">Google Play</a>
+              <a href="/superpop/terms.html">이용약관</a>
+              <a href="/superpop/privacy.html">개인정보처리방침</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p class="contact"><a href="mailto:superseed000@gmail.com">superseed000@gmail.com</a></p>
+    </div>
+  </section>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>SUPER SEED · 대표 김현지 · 대한민국</p>
+    <p><a href="/superpop/terms.html">이용약관 / Terms</a> · <a href="/superpop/privacy.html">개인정보처리방침 / Privacy Policy</a></p>
+  </div>
+</footer>
 </body>
 </html>
